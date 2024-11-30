@@ -1,0 +1,515 @@
+/*
+Theme name: Billy the Greek Theme
+Author: Billy the Greek
+Description: A theme for Billy the Greek restaurant in Esbjerg
+Version: 1.0
+
+*/
+
+
+  /* Main Content */
+  .about-and-food-truck-section {
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-billy {
+    padding: 20px;
+    background-color: #080F31;
+    flex-direction: column !important;
+  }
+  
+  .about-billy-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+  }
+  
+  .about-image {
+    display: none;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .about-content h1 {
+    font-size: 3rem; 
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .about-content p {
+    font-size: 1.5rem; 
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+  }
+  
+  .about-style {
+    font-family: Berkshire Swash;
+    margin-left: -3vw;
+    font-size: 2rem;
+  }
+  
+  .about-style-truck {
+    font-family: Berkshire Swash;
+    margin-left: -3vw;
+    font-size: 2rem;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    align-items: center; 
+    justify-content: center;
+    width: 50%; 
+    margin: 0 auto; 
+    
+  }
+  
+  .button-group .btn-primary,
+  .button-group .btn-secondary {
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #1961AE;
+    background-color: white;
+    color: #1961AE;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; 
+  }
+  
+  .btn-primary span,
+  .btn-secondary span {
+    display: block; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #1961AE;
+    border-radius: 25px;
+    z-index: -1; 
+    transition: 0.5s; 
+  }
+  
+  .btn-primary:hover span,
+  .btn-secondary:hover span {
+    width: 100%; 
+    color: white;
+  }
+  
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    border: 2px solid #1961AE;
+    color: white !important; 
+    z-index: 1; 
+  }
+  
+  
+  h1 {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  
+  
+  /* Food Truck */
+  .food-truck-intro {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    gap: 20px; 
+  }
+  
+  /* Image styling */
+  .food-truck-image {
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto !important;
+
+  }
+  
+  .line-break {
+    display: block;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-weight: bolder;
+  }
+  
+  /* Text content styling */
+  .text-content {
+    text-align: center; /* Center text for mobile */
+  }
+  
+  .text-content h2 {
+    font-size: 2rem;
+    color: #17175C;
+    margin-bottom: 10px;
+  }
+  
+  .text-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Button styling */
+  .btn-food-truck {
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #17175C;
+    background-color: white;
+    color: #1961AE;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-food-truck span {
+    background-color: #1961AE;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1 !important;
+    transition: 0.5s ease-in-out, border 0.5s ease-in-out;
+  }
+  
+  .btn-primary:not(:hover) span {
+    width: 0; /* Reset span width to 0 */
+    transition: width 0.5s ease-in-out 0.3s; /* Delay reverse animation */
+  }
+  
+  .btn-food-truck:hover span {
+    width: 100%;
+  }
+  
+  .btn-food-truck:hover {
+    color: white !important;
+    z-index: 10;
+  }
+  
+  
+  /* Footer */
+  .footer-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+    margin-top: 5vh;
+  }
+  
+  
+  .footer-logo img {
+    width: 140px;
+    height: auto;
+  }
+  
+  .footer-left, .footer-right, .footer-social {
+    text-align: center;
+    color: #080F31;
+  }
+  
+  .footer-left p {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: larger;
+  }
+  
+  .mail-mobile {
+      margin-top: 20px !important;
+      font-size: medium !important;
+      font-weight: 200 !important;
+    }
+  
+  .footer-left a {
+      text-decoration: none;
+      color: inherit;
+  }
+  
+  .footer-left a:hover{
+    color: #1961AE;
+    text-decoration: underline;
+  }
+  
+  .footer-right p {
+    margin-top: 15px;
+  }
+  
+  .footer-social ul {
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+  
+  }
+  
+  .footer-social a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .footer-social a:hover {
+    color: #1da1f2;
+  }
+  
+  .footer-social img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .footer-social ul li a img {
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .footer-social ul li a img:hover {
+    transform: scale(1.3); 
+  }
+  
+  
+  .social-icon {
+    transition: filter 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    filter: invert(25%) sepia(100%) saturate(500%) hue-rotate(180deg);
+  }
+  
+  
+  .footer-logo {
+    order: -1;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .footer-svg {
+    display: none; 
+  }
+  
+  /* style for different colors of footer */
+  
+  
+  
+  .left-index, .right-index {
+    color: white;
+  }
+  
+  .footer-index {
+    background-color: #080F31;
+    margin-left: 0px !important;
+  }
+  
+  
+  .top-background-image {
+    width: 100%;
+    height: 100px;
+    background-image: url('http://billythegreek.local/wp-content/uploads/2024/11/Group-7.svg');    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .bottom-background-image {
+    width: 100%;
+    height: 100px;
+    background-image: url('http://billythegreek.local/wp-content/uploads/2024/11/Group-7.svg');    background-size: contain;
+    background-position: start;
+    background-repeat: no-repeat;
+  }
+  
+  @media (min-width: 605px) {
+    .food-truck-intro {
+      flex-direction: row; 
+      align-items: center;
+      gap: 10vw;
+      height: auto;
+      margin-left: 10%;
+      margin-right: 5%;
+    }
+  
+    .text-content p {
+      margin: initial;
+    }
+  
+    .food-truck-image {
+      max-width: 30%; 
+      align-self: center;
+    }
+  
+    .text-content {
+      text-align: left; 
+    }
+  
+  
+    .about-billy-desktop {
+      flex-direction: row !important; 
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left;
+  }
+  
+  
+  .about-image {
+    display: block;
+    max-width: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .about-content {
+      flex: 1;
+      margin-left: 7vw;
+  }
+  .about-content p {
+    width: 80%;
+    display: contents;
+  }
+  .button-group {
+      flex-direction: row; 
+      gap: 20px;
+      margin: initial; 
+      margin-top: 30px;
+  
+  } 
+    .footer-container {
+      flex-direction: row; 
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+    .footer-left, .footer-right {
+      flex: 1; 
+      align-self: flex-end;
+    }
+  
+    .footer-left p, .footer-right p, .mail-desktop a {
+      font-size:x-large;
+      margin-top: 25px;
+      margin-bottom: -10px;
+    }
+  
+    .mail-desktop {
+      margin-top: 65px !important;
+    }
+  
+    .footer-left {
+      order: -1; 
+      text-align: left;
+    }
+  
+    .footer-right {
+      text-align: right;
+    }
+  
+    .footer-logo {
+      flex: 0; 
+      text-align: center;
+    }
+  
+    .footer-logo img {
+      width: 273px !important;
+      
+    }
+  
+    .footer-social {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .footer-social ul {
+      justify-content: center;
+    }
+  
+    .footer-background {
+      background-size:contain !important;
+      z-index: 1;
+    background-size: auto;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 20px; 
+    margin-left: 2px;
+    }
+  
+    .footer-index {
+      background-image: url('http://billythegreek.local/wp-content/uploads/2024/11/meander-white.svg') !important;    
+    }
+  
+  
+  
+  }
+  @media (max-width: 850px) {
+    .about-image {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 1140px) {
+    .footer-container {
+      margin-bottom: 100px;
+    }
+  }
+  
+  @media (max-width: 878px) {
+    .mail-desktop a {
+      font-size: medium;
+    }
+  
+    .footer-logo img {
+      width: 150px !important;
+    }
+  
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .footer-animate {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
